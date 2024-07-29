@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MelodyZone-Your Favourite Music is here</title>
+  <!--- CSS stylesheet----------->
+  <link rel="stylesheet" href="style.css">
+  <!---favicon----------------->
+  <link rel="icon" href="movie.png">
+  <!------ icons------------->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+   <!-- **************NAVBAR ******************** -->
+   <nav >
+    <div class="left">
+      <img class="logo-img" src="movie.png" alt="">
+      <h2>Melody<span class="titlepart">Zone</span>
+        </h2>
+      <ul>
+        <li>Home</li>
+        <li>Latest Songs</li>
+        <li>Playlist</li>
+      </ul>
+    </div>
+      <div class="right">
+        <div class="account">
+          <i><i class='bx bx-user-circle'></i></i>
+        </div>
+
+      </div>
+     
+  </nav>
+  <!-- *************END OF NAVBAR********************* -->
+   <!-- **************************Conatiner section************************** -->
+   <div class="container">
+   <div class="songlist ">
+    <h1>Your All Time Favourite Songs!!!</h1>
+    <div>
+      <div class="song">
+        <img src="tere vaaste.jpg" alt="">
+        <span>Tere Vaaste</span>
+        <span class="songplay"><span class="timestamp">03:09<i id="1" class='bx bx-play-circle songitemplay'></i></span></span>
+      </div>
+      <div class="song">
+        <img src="5 taara.jpg" alt="">
+        <span>5 Taara</span>
+        <span class="songplay"><span class="timestamp">02:59<i id="2"class=' songitemplay bx bx-play-circle'></i></span></span>
+      </div>
+      <div class="song">
+        <img src="diamond.jpg" alt="">
+        <span>Diamond</span>
+        <span class="songplay"><span class="timestamp">04:00<i  id="3"  class='songitemplay bx bx-play-circle'></i></span></span>
+      </div>
+      <div class="song">
+        <img src="do gallan.jpg" alt="">
+        <span>Do Gallan</span>
+        <span class="songplay"><span class="timestamp">04:17<i id="4" class='songitemplay bx bx-play-circle'></i></span></span>
+      </div>
+      <div class="song">
+        <img src="duniyaa.jpg" alt="">
+        <span>Duniyaa</span>
+        <span class="songplay"><span class="timestamp">03:43<i id="5" class=' songitemplay bx bx-play-circle'></i></span></span>
+      </div>
+      <div class="song">
+        <img src="excuses.jpg" alt="">
+        <span>Excuses</span>
+        <span class="songplay"><span class="timestamp">02:56<i id="6" class='songitemplay bx bx-play-circle'></i></span></span>
+      </div>
+      <div class="song">
+        <img src="no competetion.jpg" alt="">
+        <span>No Competition</span>
+        <span class="songplay"><span class="timestamp">03:23<i id="7" class='songitemplay bx bx-play-circle'></i></span></span>
+      </div>
+      <div class="song">
+        <img src="sorry.jpg" alt="">
+        <span>Sorry Song</span>
+        <span class="songplay"><span class="timestamp">03:25<i id="8" class='songitemplay bx bx-play-circle'></i></span></span>
+      </div>
+      <div class="song">
+        <img src="9.jpg" alt="">
+        <span>Phir Aur Kya Chahiye</span>
+        <span class="songplay"><span class="timestamp">04:26<i id="9" class='songitemplay bx bx-play-circle'></i></span></span>
+      </div>
+      <div class="song">
+        <img src="waalian.jpg" alt="">
+        <span>Waalian</span>
+        <span class="songplay"><span class="timestamp">03:42<i id="10" class='songitemplay bx bx-play-circle'></i></span></span>
+      </div>
+    </div>
+
+   </div>
+  
+   </div>
+  <!-- ****************************BOTTOM SLIDER************************** -->
+  <div class="bottom">
+    
+    <input type="range" name="range" id="myprogressbar" value="0" min="0" max="100">
+    <div class="icons">
+      <i class='bx bx-fast-forward-circle bx-rotate-180' id="next"></i>
+      <i class='bx bx-play-circle' id="masterplay"></i>
+      <i class='bx bx-fast-forward-circle' id="previous"></i>
+    </div>
+    <div class="songinfo">
+      <img src="playing.gif" width="42px"  alt="" id="gif"><span id="songtitle">Tere Vaaste</span> 
+    </div>
+  </div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&family=Poppins:wght@300;400;500&display=swap');
+*,*::before,*::after{
+    margin: 0 ;
+    padding: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#2C3333;
+    color:white;
+}
+
+/********************Nav bar****************************************************/
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: black;
+    color: white;
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+   z-index: 1;
+}
+
+.left{
+    display: flex;
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    padding:  0 1rem;   
+    font-size: 1rem;
+}
+.logo-img{
+    width: 2.4rem;
+    aspect-ratio:1/1;
+    overflow: hidden;
+    padding: 0 0.75rem;
+}
+.left h2 {
+ font-size: 1.7rem;
+ gap :1rem;
+ padding: 0 0.75rem;
+ align-items: center;
+}
+.titlepart{
+    background: orange;
+    color: black;
+    border-radius: 0.5rem;
+}
+.right{
+    padding: 0 1.5rem ;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/*********************Middle section****************************/
+.container{
+    color: white;
+    display: flex;
+    align-items: center;
+    width:85%;
+    height: 100%;
+    margin: 8rem auto;
+    border-radius: 1rem;
+    background: url('background.jpg')  ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0px 0px 15px 15px rgb(203, 217, 12) ;
+    
+}
+.songlist{
+    margin: 1rem 2.5rem;
+}
+.songlist h1{
+    margin: 1rem 0;
+}
+.song{
+    display: flex;
+    background: white;
+    width:100%;
+    height:35%;
+    color: black;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+}
+.song img{ 
+    width: 2.4rem;
+    aspect-ratio:1/1;
+    padding: 0 0.75rem;
+    border-radius: 50%;
+}
+.timestamp{
+    margin: 0 1rem;
+    gap: 1rem;
+}
+.timestamp i{
+    cursor: pointer;
+}
+/*************************************Bottom section****************************************/
+.bottom{
+    width:100%;
+    color: white;
+    position: fixed;
+    height: 12vh;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+}
+.icons{
+    gap: 1rem;
+    font-size: 1.75rem;
+    position: fixed;
+    margin: 2rem 0;
+    cursor: pointer;
+}
+#myprogressbar{
+    position: fixed;
+    width: 80vw;
+    margin: 1rem 0;
+    cursor: pointer;
+}
+.songinfo{
+    display: flex;
+    left:1vw;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+    gap: 1rem;
+}
+.songinfo img{
+    opacity: 0;
+}
+
+@media screen and (max-width:1200px){
+    
+    .song{
+    width: 65vw;
+    align-self:center;
+    }
+   
+   
+}
+@media screen and (max-width:800px){
+    .song{
+    width: 65vw;
+    align-self:center;
+    }
+    nav ul{
+        display:none;
+    }
+    .bottom{
+        height: 15vh;
+    }
+}
